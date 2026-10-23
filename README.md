@@ -9,7 +9,7 @@
 [![Deploy: GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-6e56cf.svg)](.github/workflows/pages.yml)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff5f57.svg)](CONTRIBUTING.md)
 
-[在线 Demo](https://YOUR-NAME.github.io/codex-deploy-guide/) · [快速开始](#快速开始) · [反馈问题](../../issues)
+[在线 Demo](https://llizhi731-byte.github.io/codex-deploy-guide/) · [快速开始](#快速开始) · [反馈问题](../../issues)
 
 <img src="docs/screenshots/start.png" alt="开始页" width="880" />
 
@@ -38,7 +38,7 @@ macOS「系统设置」窗口的单页应用：左边导航、右边步骤，命
 ### 本地打开
 
 ```bash
-git clone https://github.com/<your-name>/codex-deploy-guide.git
+git clone https://github.com/llizhi731-byte/codex-deploy-guide.git
 cd codex-deploy-guide
 
 # 方式一：直接双击 index.html
