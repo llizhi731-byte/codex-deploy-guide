@@ -1,0 +1,47 @@
+name: 问题反馈
+description: 报告文档/页面上的错误，或提出改进建议
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量不要贴出真实的 API Key（可替换成 `sk-xxxx`）。
+  - type: dropdown
+    id: area
+    attributes:
+      label: 涉及部分
+      options:
+        - 部署步骤（某一步的命令不对/跑不通）
+        - 一键脚本
+        - 排错内容
+        - 页面样式/交互
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境
+      description: 浏览器版本 / Android 版本 / Termux 版本 / Alpine 版本
+      placeholder: Chrome 141 · Android 14 · Termux 0.118 · Alpine 3.20
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 报错输出
+      description: 直接粘贴终端输出，注意隐去密钥
+      render: shell
